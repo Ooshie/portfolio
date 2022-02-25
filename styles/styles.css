@@ -1,0 +1,18 @@
+.bg {
+    background-color: rgb(10, 10, 10);
+}
+.text-yellow {
+    color: rgb(242, 225, 160)
+}
+.blue-green {
+    border-color: rgb(16, 70, 77)
+}
+.twitch-color {
+    color: rgb(100, 65, 164)
+}
+.linkedin-color {
+    color: rgb(40,103,178)
+}
+.transBG {
+    background-color: rgba(10,10,10,0.5);
+}
