@@ -1,0 +1,98 @@
+<head>
+    <link rel="icon" href="assets/bakedpotato.png">
+    <title>Nick Nguyen</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap-icons.css">
+</head>
+<body class="bg text-yellow">
+    <!--Navbar-->
+    <nav class="navbar navbar-light bg-info container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <i class="text-yellow bi bi-house"></i> Nick Nguyen
+        </a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-options">
+            <i class="navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-options">            
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">
+                        <i class="text-yellow bi bi-code-slash"></i> Code
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">
+                        <i class="text-yellow bi bi-chat-dots"></i> Blog
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">
+                        <i class="text-yellow bi bi-person"></i> About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        <i class="text-yellow bi bi-envelope"></i> Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Blog page-->
+    <div class="container mt-4">
+        <h1 class="display-1">
+            <i class="bi bi-chat-dots"></i> Blog
+        </h1>
+        <hr>
+    </div>
+
+        <!--Carousel -->
+        <div id="blog-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <!-- Carousel Menu -->
+            <ol class="carousel-indicators">
+                <li data-bs-target="#blog-carousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#blog-carousel" data-bs-slide-to="1"></li>
+            </ol>
+        <!-- Carousel Body -->
+        <div class="carousel-inner text-center">
+            <!-- Slide 1 -->
+            <div id="slide-1" class="carousel-item active">
+                <img class="img-fluid" width="600" src="assets/ampere.gif">
+                <div class="carousel-caption">
+                    <h2 class="text-yellow transBG">Aether BTS</h2>
+                    <p class="transBG"> The making of my first game :) </p>
+                    <button class="btn btn-outline-info" type="button"> Coming Soon! </button> <!-- onclick="document.location='articles/article-01.html'" -->
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div id="slide-2" class="carousel-item">
+                
+                <img class="img-fluid" width="600" src="assets/wings.jpg">
+                <div class="carousel-caption">
+                    <h2 class="text-yellow transBG"> Wingstop Lemon Pepper Wings </h2>
+                    <p class="transBG"> You won't believe this copycat recipe! </p>
+                    <button class="btn btn-outline-info" type="button"> Coming Soon! </button> <!-- onclick="document.location='articles/article-02.html'" -->
+                </div>
+            </div>
+        </div>
+        <!-- Carousel Controls -->
+        <a class="carousel-control-prev" href="#blog-carousel" role="button" data-bs-slide="prev">
+            <i class="carousel-control-prev-icon"></i>
+        </a>
+        <a class="carousel-control-next" href="#blog-carousel" role="button" data-bs-slide="next">
+            <i class="carousel-control-next-icon"></i>
+        </a>
+    <div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+</body>
