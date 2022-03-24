@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <link rel="icon" href="../assets/bakedpotato.png">
+        <title>Simple Pong</title>
+    
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <link rel="stylesheet" href="../styles/styles.css">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../styles/bootstrap.min.css">
+        <link rel="stylesheet" href="../styles/bootstrap-icons.css">
+    </head>
+    <body class="bg">
+
+        <div class='container'>
+            <h1 class='display-1 mt-4 text-yellow'> Simple Pong </h1>
+            <hr class="text-info">
+            <p class="mt-4 text-white">
+                In this article I'll be describing my implementation of Pong.
+                Firstly, I was required to create a web application that utilizes both Canvas and Local Storage.
+                In order to create the canvas I used the canvas tag in my index.html file and defined its dimensions.
+                In my JS file for the game, to render the canvas and everything in it I had to use window.onload and setInterval() to update the game's frames.
+                <br>
+                <br>
+                <img src="pong-pics/onload.png">
+                <br>
+                <br>
+
+                To actually draw everything visible I had to use fillStyle, fillRect, and fillText.
+                
+                <br>
+                <br>
+                <img src="pong-pics/draw.png">
+                <br>
+                <br>
+
+                Implementing Local Storage was pretty straight forward when everything was set up.
+                Initially I set my two variables equal to 0. Interestingly I don't have to use "var" to intialize the variable names.
+                
+                <br>
+                <br>
+                <img src="pong-pics/local-zero.png">
+                <br>
+                <br>
+
+                Earlier I showed using fillText() allowed me to display the values of my Local Storage variables myScore and aiScore.
+                To update the variables in the game.
+
+                <br>
+
+                To increment the local storage variables, it is pretty similar to incrementing regular variables.
+                An article mentioned wrapping part of the statement in Number() to make sure it's a number.
+            
+                <br>
+                <br>
+                <img src="pong-pics/myScore.png">
+                <br>
+                <br>
+
+                The rest involved implementing the actual game of Pong where you can control your paddle with mouse movement.
+                Canvas has addEventListener to recognize inputs like mouse movement shown in the first image.
+                There is ball physics and and physics regarding making contact with the paddles the directions will change.
+                It checks if the ball touches the ceilling, ground, paddles, and if it passes through a paddle's side it will
+                increment the given score.
+
+                <br>
+                <br>
+                <img src="pong-pics/left-side-physics.png">
+                <br>
+                <br>
+
+                That concludes my brief explanation of my Simple Pong.
+            </p>
+
+            <a class="btn btn-outline-info" href="https://ooshie.github.io/Pong/" role="button"">Play</a>
+
+            <br>
+            <br>
+
+            <h5 class='text-yellow'> By: Nick Nguyen </h5>
+        </div>
+
+        <!--  Bootstrap Bundle with Popper -->
+        <script src="../scripts/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
