@@ -52,7 +52,7 @@
         <h1 class="display-1">
             <i class="bi bi-chat-dots"></i> Blog
         </h1>
-        <hr>
+        <hr class="text-info">
     </div>
 
         <!--Carousel -->
@@ -61,29 +61,44 @@
             <ol class="carousel-indicators">
                 <li data-bs-target="#blog-carousel" data-bs-slide-to="0" class="active"></li>
                 <li data-bs-target="#blog-carousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#blog-carousel" data-bs-slide-to="2"></li>
             </ol>
+
         <!-- Carousel Body -->
         <div class="carousel-inner text-center">
+        
             <!-- Slide 1 -->
-            <div id="slide-1" class="carousel-item active">
-                <img class="img-fluid" width="600" src="assets/ampere.gif">
-                <div class="carousel-caption">
-                    <h2 class="text-yellow transBG">Aether BTS</h2>
-                    <p class="transBG"> The making of my first game :) </p>
-                    <button class="btn btn-outline-info" type="button"> Coming Soon! </button> <!-- onclick="document.location='articles/article-01.html'" -->
-                </div>
-            </div>
-            <!-- Slide 2 -->
-            <div id="slide-2" class="carousel-item">
-                
+            <div id="slide-1" class="carousel-item active"> <!-- slide with class = "active" is the first to show -->
                 <img class="img-fluid" width="600" src="assets/myPong.png">
                 <div class="carousel-caption">
                     <h2 class="text-yellow transBG"> Simple Pong </h2>
                     <p class="transBG"> Making a simple game of Pong </p>
-                    <button class="btn btn-outline-info" type="button" onclick="document.location='articles/pong.html'"> Click Me </button> <!-- onclick="document.location='articles/article-02.html'" -->
+                    <button class="btn btn-outline-info" type="button" onclick="document.location='articles/pong.html'"> See More </button> <!-- onclick="document.location='articles/article-02.html'" -->
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div id="slide-2" class="carousel-item">
+                <img class="img-fluid" width="600" src="assets/announcement.png">
+                <div class="carousel-caption">
+                    <h2 class="text-yellow transBG"> Project Announcement </h2>
+                    <p class="transBG"> Restaurant Web Application </p>
+                    <button class="btn btn-outline-info" type="button" onclick="document.location='articles/project-announcement.html'"> See More </button> <!-- onclick="document.location='articles/article-02.html'" -->
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div id="slide-3" class="carousel-item">
+                <img class="img-fluid" width="600" src="assets/ampere.gif">
+                <div class="carousel-caption">
+                    <h2 class="text-yellow transBG">Aether BTS</h2>
+                    <p class="transBG"> The making of my first game :) </p>
+                    <button class="btn btn-outline-info" type="button"> Coming Soon! </button>
+                    <!-- onclick="document.location='articles/article-01.html'" -->
                 </div>
             </div>
         </div>
+
         <!-- Carousel Controls -->
         <a class="carousel-control-prev" href="#blog-carousel" role="button" data-bs-slide="prev">
             <i class="carousel-control-prev-icon"></i>
