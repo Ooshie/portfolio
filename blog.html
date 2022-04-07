@@ -55,7 +55,7 @@
         <hr class="text-info">
     </div>
 
-        <!--Carousel -->
+        <!-- Carousel Highlighted Blogs-->
         <div id="blog-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
             <!-- Carousel Menu -->
             <ol class="carousel-indicators">
@@ -64,49 +64,82 @@
                 <li data-bs-target="#blog-carousel" data-bs-slide-to="2"></li>
             </ol>
 
-        <!-- Carousel Body -->
-        <div class="carousel-inner text-center">
-        
-            <!-- Slide 1 -->
-            <div id="slide-1" class="carousel-item active"> <!-- slide with class = "active" is the first to show -->
-                <img class="img-fluid" width="600" src="assets/myPong.png">
-                <div class="carousel-caption">
-                    <h2 class="text-yellow transBG"> Simple Pong </h2>
-                    <p class="transBG"> Making a simple game of Pong </p>
-                    <button class="btn btn-outline-info" type="button" onclick="document.location='articles/pong.html'"> See More </button> <!-- onclick="document.location='articles/article-02.html'" -->
+            <!-- Carousel Body -->
+            <div class="carousel-inner text-center">
+            
+                <!-- Slide 1 -->
+                <div id="slide-1" class="carousel-item active"> <!-- slide with class = "active" is the first to show -->
+                    <img class="img-fluid" width="600" src="assets/myPong.png">
+                    <div class="carousel-caption">
+                        <h2 class="text-yellow transBG"> Simple Pong </h2>
+                        <p class="transBG"> Making a simple game of Pong </p>
+                        <button class="btn btn-outline-info" type="button" onclick="document.location='articles/pong.html'"> See More </button> <!-- onclick="document.location='articles/article-02.html'" -->
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div id="slide-2" class="carousel-item">
+                    <img class="img-fluid" width="600" src="assets/announcement.png">
+                    <div class="carousel-caption">
+                        <h2 class="text-yellow transBG"> Project Announcement </h2>
+                        <p class="transBG"> Restaurant Web Application </p>
+                        <button class="btn btn-outline-info" type="button" onclick="document.location='articles/project-announcement.html'"> See More </button> <!-- onclick="document.location='articles/article-02.html'" -->
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div id="slide-3" class="carousel-item">
+                    <img class="img-fluid" width="600" src="assets/ampere.gif">
+                    <div class="carousel-caption">
+                        <h2 class="text-yellow transBG">Aether BTS</h2>
+                        <p class="transBG"> The making of my first game :) </p>
+                        <button class="btn btn-outline-info" type="button"> Coming Soon! </button>
+                        <!-- onclick="document.location='articles/article-01.html'" -->
+                    </div>
                 </div>
             </div>
 
-            <!-- Slide 2 -->
-            <div id="slide-2" class="carousel-item">
-                <img class="img-fluid" width="600" src="assets/announcement.png">
-                <div class="carousel-caption">
-                    <h2 class="text-yellow transBG"> Project Announcement </h2>
-                    <p class="transBG"> Restaurant Web Application </p>
-                    <button class="btn btn-outline-info" type="button" onclick="document.location='articles/project-announcement.html'"> See More </button> <!-- onclick="document.location='articles/article-02.html'" -->
-                </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div id="slide-3" class="carousel-item">
-                <img class="img-fluid" width="600" src="assets/ampere.gif">
-                <div class="carousel-caption">
-                    <h2 class="text-yellow transBG">Aether BTS</h2>
-                    <p class="transBG"> The making of my first game :) </p>
-                    <button class="btn btn-outline-info" type="button"> Coming Soon! </button>
-                    <!-- onclick="document.location='articles/article-01.html'" -->
-                </div>
-            </div>
+            <!-- Carousel Controls -->
+            <a class="carousel-control-prev" href="#blog-carousel" role="button" data-bs-slide="prev">
+                <i class="carousel-control-prev-icon"></i>
+            </a>
+            <a class="carousel-control-next" href="#blog-carousel" role="button" data-bs-slide="next">
+                <i class="carousel-control-next-icon"></i>
+            </a>
         </div>
 
-        <!-- Carousel Controls -->
-        <a class="carousel-control-prev" href="#blog-carousel" role="button" data-bs-slide="prev">
-            <i class="carousel-control-prev-icon"></i>
-        </a>
-        <a class="carousel-control-next" href="#blog-carousel" role="button" data-bs-slide="next">
-            <i class="carousel-control-next-icon"></i>
-        </a>
-    <div>
+        <!-- Rest of the blogs -->
+        <div class="container">
+
+            <hr class="text-info">
+        
+            <!-- START: Card Group -->
+            <div class="card-group gap-2">
+                <!-- START: Card 1 -->
+                <div class="card bg-dark text-center">
+                    <!-- Card Header -->
+                    <!-- <div class="card-header"> -->
+                        <!-- <img class="img-thumbnail" src="assets/smoke.gif"> -->
+                    <!-- </div> -->
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <h3 class="card-title text-yellow"> Project Specifications </h3>
+                        <p class="card-text text-white">
+                            Restaurant Web Application
+                        </p>
+                    </div>
+                    <!-- Card Footer -->
+                    <div class="card-footer">
+                        <button class="btn btn-outline-info" type="button" onclick="document.location='articles/project-specifications.html'"> See More </button>
+                    </div>
+                </div>
+                <!-- END:Card 1 -->
+        
+                <!-- START:Card 2 -->
+                <!-- END:Card 2 -->
+            </div>
+            <!-- END:Card Group -->
+        </div>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="scripts/bootstrap.bundle.min.js"></script>
