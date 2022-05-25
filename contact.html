@@ -65,15 +65,18 @@
             <div class="form-group mb-3">
 
                 <label>Subject:</label>
-                <input class="form-control" type="subject" id="subject" placeholder="Subject">
+                <input class="form-control" type="text" id="subject" placeholder="Subject">
             </div>
             <div class="form-group mb-3">
                 <label>Message:</label>
                 <textarea class="form-control" rows="4" id="message" placeholder="Message"> </textarea>
             </div>
-        <button class='btn btn-outline-info float-end' type="submit"> Submit </button>
+        <button class='btn btn-outline-info float-end' id="submit"> Submit </button>
         </form>
     </div>
+
+    <script src="scripts/form-model.js"></script>
+    <script src="scripts/form-controller.js"></script>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="scripts/bootstrap.bundle.min.js"></script>
